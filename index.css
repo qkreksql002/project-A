@@ -15,7 +15,7 @@ a {
 }
 
 #main {
-    background: url("https://pixabay.com/get/53e5dc464c5ba514f6d1867dda293f7b173edbec574c704f752e7fd39345c25b_1920.jpg")no-repeat;
+    background: url("light.jpg")no-repeat;
     background-size: cover;
     background-position: center center;
     width: 100vw;
