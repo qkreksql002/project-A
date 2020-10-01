@@ -1,0 +1,97 @@
+.nav {
+    height: 60px;
+    border-bottom: 4px solid black;
+    display: flex;
+    align-item: center;
+}
+
+.nav-company-name {
+    display: flex;
+    margin-left: auto;
+    font-size: 29px;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+
+.nav-right-items {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 50px;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+.main {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.prices {
+    display: flex;
+}
+
+.price-item {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 20px;
+    boder-radius: 4px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.price-item-title {
+    font-size: 2rem;
+    background: rgba(0, 0, 0, .03);
+    height: 53px;
+    border-bottom: 1px solid black;
+}
+
+.price-item-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.price-item-button {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-heihgt: 1.5;
+    border-radius: .3rem;
+    color: #007bff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #007bff;
+    margin-top: 30px;
+}
+
+.price-item-button--active {
+    background-color: #007bff;
+    color: white;
+}
+
+.price-item-month {
+    font-size: 16px;
+    color: gray;
+}
+
+.price-item-detail {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
