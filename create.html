@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+
+<body>
+    <section class="login-form">
+        <h1><a href="index.html">Sign up or HOME</a></h1>
+        <form action="">
+            <div class="int-area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                <label for="id">E-Mail</label>
+            </div>
+            <div class="int-area">
+                <input type="Password" name="pw" id="pw" autocomplete="off" required>
+                <label for="pw">Password</label>
+            </div>
+            <div class="int-area">
+                <input type="Confirm Password" name="cpw" id="cpw" autocomplete="off" required>
+                <label for="pw">Re Password</label>
+            </div>
+            <div class="int-area">
+                <input type="Code" name="co" id="co" autocomplete="off" required>
+                <label for="co">Code</label>
+            </div>
+            <div class="btn-area">
+                <button type="submit"><strong>Sign-Up</strong></button>
+            </div>
+        </form>
+        <div class="caption">
+            <a href="log.html">Log-in</a>
+        </div>
+    </section>
+
+    <script>
+        let id = $('#id')
+        let pw = $('#pw')
+        let pw = $('#cpw')
+        let pw = $('#co')
+        let btn = $('#btn')
+
+        $(btn).on('click', function() {
+                    if (#(id).val() == "") {
+                        $(id).next('label').addClass('warning');
+                        setTimeout(function() {
+                            $('label').removeClass('warning');
+                        }, 1500);
+                    } else if ($(pw).val() == "") {
+                        $(id).next('label').addClass('warning');
+                        setTimeout(function() {
+                            $('label').removeClass('warning');
+                        }, 1500);
+                    } else if ($(cpw).val() == "") {
+                        $(id).next('label').addClass('warning');
+                        setTimeout(function() {
+                            $('label').removeClass('warning');
+                        }, 1500);
+                    } else if ($(co).val() == "") {
+                        $(id).next('label').addClass('warning');
+                        setTimeout(function() {
+                            $('label').removeClass('warning');
+                        }, 1500);
+                    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Questrial&display=swap' rel="stylesheet");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("light1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.login-form {
+    position: relative;
+    z-index: 2;
+}
+
+.login-form h1 {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form a {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.int-area {
+    width: 400px;
+    position: relative;
+}
+
+.int-area input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+}
+
+.int-area label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 18px;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.int-area label.warning {
+    color: red !important;
+    animation: warning .3 ease;
+    animation-iteration-count: 3;
+}
+
+@keyframes warning {
+    0% {
+        transform: translateX(-8px);
+    }
+    25% {
+        transform: translateX(8px);
+    }
+    50% {
+        transform: translateX(-8px);
+    }
+    75% {
+        transform: translateX(8px);
+    }
+}
+
+.int-area input:focus+label,
+.int-area input:focus+label {
+    top: -2px;
+    font-size: 13px;
+    color: #3cb4b4;
+}
+
+.btn-area {
+    margin-top: 35px;
+}
+
+.btn-area button {
+    width: 47%;
+    height: 45px;
+    background: rgb(107, 107, 226);
+    color: #fff;
+    font-size: 28px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 45%;
+    letter-spacing: 2px;
+}
+
+.caption {
+    margin: 3px;
+    margin-left: 65%;
+}
+
+.caption a {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
